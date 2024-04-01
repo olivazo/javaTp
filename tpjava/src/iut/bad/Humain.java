@@ -1,6 +1,6 @@
 package iut.bad;
 
-public class Humain {
+public class Humain implements Consommation {
 	private String nom;
     private String prenom;
     private int age;
@@ -53,12 +53,12 @@ public class Humain {
     
     // Méthode pour manger
     public void manger() {
-        System.out.println("Je mange.");
+        System.out.println("L'humain" + nom + " " + prenom + " mange");
     }
     
     // Méthode pour boire
     public void boire() {
-        System.out.println("Je bois.");
+        System.out.println("L'humain" + nom + " " + prenom + " bois");
     }
     
     
