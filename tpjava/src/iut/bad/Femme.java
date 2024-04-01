@@ -17,7 +17,6 @@ public class Femme extends Humain {
         Femme femme = new Femme("Smith", "Alice", 25);
         
         // Déclaration d'amitié entre l'homme et la femme
-        homme.ami(femme);
-        femme.ami(homme);
+        homme.ami(femme,100);
     }
 }
