@@ -40,16 +40,12 @@ public class Humain implements Consommation {
     public void setAge(int age) {
         this.age = age;
     }
-    public void afficherInformations() {
+    public void details() {
         System.out.println("Nom: " + nom);
         System.out.println("Prénom: " + prenom);
         System.out.println("Age: " + age);
     }
     
- // Méthode pour afficher les détails de l'humain en utilisant une seule instruction println
-    public void details() {
-        System.out.println("Nom: " + nom + ", Prénom: " + prenom + ", Age: " + age);
-    }
     
     // Méthode pour manger
     public void manger() {
@@ -69,5 +65,12 @@ public class Humain implements Consommation {
         /*si on deplace la methode toString vers les sous classes
          * il aura des erreurs car les proprietes ne sont pas accessible direct de ces sous classe
          * pour cela il faut utiliser les getters dans ces sous classes pour acceder a chacun des propriete*/
+    }
+    
+    // Méthode ami(Humain)
+    public void ami(Humain ami) {
+
+        System.out.println("La femme " + this.getNom() + " " + this.getPrenom() + " est amie avec " + ami.getNom() + " " + ami.getPrenom());
+
     }
 }
