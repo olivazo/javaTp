@@ -50,4 +50,10 @@ public class Humain {
     public void details() {
         System.out.println("Nom: " + nom + ", Prénom: " + prenom + ", Age: " + age);
     }
+    
+ // Méthode toString pour afficher les détails de l'humain
+    @Override
+    public String toString() {
+        return "Nom: " + nom + ", Prénom: " + prenom + ", Age: " + age;
+    }
 }
