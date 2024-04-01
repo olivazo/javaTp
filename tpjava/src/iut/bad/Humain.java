@@ -51,6 +51,17 @@ public class Humain {
         System.out.println("Nom: " + nom + ", Prénom: " + prenom + ", Age: " + age);
     }
     
+    // Méthode pour manger
+    public void manger() {
+        System.out.println("Je mange.");
+    }
+    
+    // Méthode pour boire
+    public void boire() {
+        System.out.println("Je bois.");
+    }
+    
+    
  // Méthode toString pour afficher les détails de l'humain
     @Override
     public String toString() {
