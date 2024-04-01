@@ -39,4 +39,9 @@ public class Humain {
     public void setAge(int age) {
         this.age = age;
     }
+    public void afficherInformations() {
+        System.out.println("Nom: " + nom);
+        System.out.println("Prénom: " + prenom);
+        System.out.println("Age: " + age);
+    }
 }
