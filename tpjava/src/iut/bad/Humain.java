@@ -67,10 +67,11 @@ public class Humain implements Consommation {
          * pour cela il faut utiliser les getters dans ces sous classes pour acceder a chacun des propriete*/
     }
     
-    // Méthode ami(Humain)
-    public void ami(Humain ami) {
+ // Méthode ami() avec un paramètre pour la durée de l'amitié (valeur par défaut: 100 jours)
 
-        System.out.println("La femme " + this.getNom() + " " + this.getPrenom() + " est amie avec " + ami.getNom() + " " + ami.getPrenom());
+        public void ami(Humain ami, int dureeAmitie) {
+
+        System.out.println("La femme " + this.getNom() + " " + this.getPrenom() + " est amie avec " + ami.getNom() + " " + ami.getPrenom() + " depuis " + dureeAmitie + " jours.");
 
     }
 }
