@@ -55,5 +55,8 @@ public class Humain {
     @Override
     public String toString() {
         return "Nom: " + nom + ", Prénom: " + prenom + ", Age: " + age;
+        /*si on deplace la methode toString vers les sous classes
+         * il aura des erreurs car les proprietes ne sont pas accessible direct de ces sous classe
+         * pour cela il faut utiliser les getters dans ces sous classes pour acceder a chacun des propriete*/
     }
 }
