@@ -8,6 +8,7 @@ public class Humain {
 	public Humain() {
 		// TODO Auto-generated constructor stub
 	}
+	
 	  // Constructeur avec tous les champs
     public Humain(String nom, String prenom, int age) {
         this.nom = nom;
@@ -43,5 +44,10 @@ public class Humain {
         System.out.println("Nom: " + nom);
         System.out.println("Prénom: " + prenom);
         System.out.println("Age: " + age);
+    }
+    
+ // Méthode pour afficher les détails de l'humain en utilisant une seule instruction println
+    public void details() {
+        System.out.println("Nom: " + nom + ", Prénom: " + prenom + ", Age: " + age);
     }
 }
